@@ -64,10 +64,6 @@ $ yarn start
 
 &nbsp;
 
-### 🔗 Link para o projeto online
-
-
-[WorldTrip](https://worldtrip.vercel.app/)
 
 &nbsp;
 
