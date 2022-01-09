@@ -14,7 +14,7 @@ export default function Header() {
         mx="auto"
         w="100%"
         maxW="1160px"
-        alignItems="center"
+        alignItems="center"g
         templateColumns="repeat(3, 1fr)"
         justifyContent="center"
         alignSelf="start"
