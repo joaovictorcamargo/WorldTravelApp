@@ -15,6 +15,7 @@ import {MdKeyboardArrowRight} from 'react-icons/md';
 import {AiOutlinePhone} from 'react-icons/ai';
 import Attendance from "../Components/Attendance";
 import {BsWhatsapp} from 'react-icons/bs';
+import Category from "../Components/Category";
 
 
 export default function Home() {
@@ -25,18 +26,14 @@ export default function Home() {
     alignItems="center"
     >
 <Flex
-    h="182px"
-    w="100%"
-    backgroundColor="gray.300"
-    alignItems="center"
-    flexDir="column"
+    h="11.5rem" w="100%" backgroundColor="gray.300" alignItems="center" flexDir="column"
   >
-     <Icon as={HiOutlineMail} size="63px" mt="21px" />
+     <Icon as={HiOutlineMail} h="1.5rem" w="1.5rem" mt="0.75rem" />
 
      <Text
-     fontSize='16px'
+     fontSize="md"
       textAlign="center"
-      mt="13px"
+      mt="1.313rem"
       
      >
        Cadastre-se e receba as melhores<br/>
@@ -45,45 +42,48 @@ export default function Home() {
      
 
      <InputGroup
-     w="306px"
-     mt="3"
+     w="19.125rem"
+     mt="1.438rem"
      >
 
        <Input
-      type="text"
-      placeholder="E-mail"
-      borderRadius="none"
-      borderTopLeftRadius="21px"
-      borderBottomLeftRadius="21px"
-      backgroundColor="gray.800"
-      focusBorderColor='gray.700'
+
+       type="text"
+       placeholder="E-mail"
+       _placeholder={{color: 'gray.100'}}
+       borderRadius="1.313rem"
+       backgroundColor="gray.800"
        />
 
          <InputRightAddon
-        color="gray.300"
-        fontWeight="bold"
-        children='Enviar'
-        borderRadius="21px"
-        backgroundColor="gray.600"
+         color="gray.300"
+         fontWeight="bold"
+         fontSize="xs"
+         lineHeight="4"
+         fontWeight="bold"
+         children='Enviar'
+         borderRadius="1.313rem"
+         backgroundColor="gray.600"
          />
 
      </InputGroup>
      </Flex>
      <Image
-     my="60px"
-    size='100px'
-    objectFit='cover'
+     my="2.313rem"
+    h="2.75rem"
+    w="4.625rem"
     src='/leo.png'
     alt='Logo Empresa Leo'
   />
 
   <Flex
   alignItems="center"
+  mb="2.25rem"
   >
-  <Icon as={BsInstagram} size="25px" color="gray.300" mr="5"/>
-  <Icon as={BsFacebook} size="25px" color="gray.300" />
-  <Icon as={BsLinkedin} size="25px" color="gray.300" ml="5"/>
-  <Icon as={BsYoutube} size="25px" color="gray.300" ml="5"/>
+  <Icon as={BsInstagram} h="1.313rem" w="1.125rem" color="gray.300" mr="1.375rem"/>
+  <Icon as={BsFacebook} h="1.313rem" w="1.125rem" color="gray.300" />
+  <Icon as={BsLinkedin} h="1.313rem" w="1.125rem" color="gray.300" ml="1.375rem"/>
+  <Icon as={BsYoutube} h="1.313rem" w="1.125rem" color="gray.300" ml="1.375rem"/>
 
   </Flex>
  
@@ -93,74 +93,36 @@ export default function Home() {
   <Separator/>
   </Flex>
 
-  <Flex
-  justifyContent="space-between"
-  alignItems="center"
-  mx="5"
-  >
-  <Text
-  color="gray.300"
-  fontWeight="bold"
-  >Institucional</Text>
+<Category
+text="Institucional"
+/>
 
-<Icon as={AiOutlinePlus} size="35px" color="gray.300" mr="5"/>
-  </Flex>
+<Category
+text="Ajuda"
+/>
 
-  <Flex>
-  <Separator/>
-  </Flex>
+<Category
+text="Para Você"
+/>
 
   <Flex
   justifyContent="space-between"
   alignItems="center"
-  mx="5"
+  mx="0.75rem"
   >
   <Text
   color="gray.300"
   fontWeight="bold"
-  >Ajuda</Text>
-
-<Icon as={AiOutlinePlus} size="35px" color="gray.300" mr="5"/>
-  </Flex>
-
-  <Flex>
-  <Separator/>
-  </Flex>
-
-  <Flex
-  justifyContent="space-between"
-  alignItems="center"
-  mx="5"
-  >
-  <Text
-  color="gray.300"
-  fontWeight="bold"
-  >Para Você</Text>
-
-<Icon as={AiOutlinePlus} size="35px" color="gray.300" mr="5"/>
-  </Flex>
-
-  <Flex>
-  <Separator/>
-  </Flex>
-
-  <Flex
-  justifyContent="space-between"
-  alignItems="center"
-  mx="5"
-  >
-  <Text
-  color="gray.300"
-  fontWeight="bold"
+  fontSize="sm"
   >Para Profissionais</Text>
 
-<Icon as={AiOutlinePlus} size="35px" color="gray.300" mr="5"/>
+<Icon as={AiOutlinePlus} h="0.819rem" w="1.125rem" color="gray.300" mr="0.375rem" />
   </Flex>
 
   <Flex
-  px="40px"
+  
   mt="17px"
-  h="317px"
+  h="23.438rem"
   w="100%"
   backgroundColor="gray.300"
   flexDir="column"
@@ -174,74 +136,61 @@ alignItems="center"
     mt="36px"
     mb="1px"
     color="gray.600"
+    fontSize="md"
+    lineHeight="6"
     fontWeight="bold"
-    fontSize="16px"
     >Central de Atendimento</Text>
 
     <Text
-    
+      fontSize="sm"
+      lineHeight="5"
+      fontWeight="semibold"
     >Segunda a sexta das 08h30 às 17h00</Text>
 </Flex>
-
+<Flex
+pl="1.938rem"
+flexDir="column"
+>
     <Attendance
     text="0800-591-0127"
-    icon={() => <AiOutlinePhone/>}
+    src="https://p1595626c1dev-store.occa.ocs.oraclecloud.com/file/general/phone.svg"
     /> 
 
 <Attendance
-    text="0800-591-0127"
-    icon={() => <BsWhatsapp/>}
+    text="Atendimento por Wathsapp"
+    src="/whatsapp-2x.png"
     /> 
 
 <Attendance
-icon={() => <AiOutlinePhone/>}
-    text="0800-591-0127"
+src="https://p1595626c1dev-store.occa.ocs.oraclecloud.com/file/general/question.svg"
+    text="Central Leo de Apoio ao Cliente"
     /> 
- 
+ </Flex>
 
     
   </Flex>
 
 <Flex
-mt="21px"
-mb="13px"
+mt="1.313rem"
+mb="0.777rem"
 justifyContent="center"
 >
   <Text
   color="gray.300"
-  fontSize="14px"
-  fontWeight="bold"
+  fontSize="sm"
   >Formas de pagamento</Text>
 </Flex>
   <Flex
   justifyContent="center"
-  mb="16px"
+  mb="1rem"
   >
 
 <Image
-    h="20px"
-    w="30px"
-    src='/master.png'
+    h="2.313rem"
+    w="9.375rem"
+    src='/image_15.png'
     alt='Logo MasterCard'
-    mr="5"
   />
-
-<Image
-    h="20px"
-    w="50px"
-    src='/visa.png'
-    alt='Logo Visa'
-   
-  />
-  
-<Image
-    h="20px"
-    w="30px"
-    src='/barra.svg'
-    alt='Código de barras'
-    ml="5"
-  />
-
 
 
   </Flex>
