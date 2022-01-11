@@ -3,16 +3,14 @@ import {extendTheme} from '@chakra-ui/react'
 export const theme = extendTheme({
     colors: {
         gray: {
-          "700": "#47585B",
-          "500": "#999999",
-          "400": "rgba(153, 153, 153, 0.5)",
-          "300": "#DADADA",
-          "100": "#F5F8FA"
+          100: 'rgba(0, 0, 0, 0.24)',
+      300: 'rgba(0, 80, 47, 1)',
+      600: 'rgba(255, 242, 0, 1)',
+      800: 'rgba(255, 255, 255, 1)',
+      700: 'rgba(255, 255, 255, 1)',
+      900: 'rgba(160, 174, 192, 1)',
+      1000: 'rgba(113, 128, 150, 1)'
         },
-        yellow: {
-          "400": "#FFBA08",
-          "300": "rgba(255, 186, 8,0.5)"
-        }
       },
       fonts: {
         heading: 'Poppins',
@@ -21,7 +19,7 @@ export const theme = extendTheme({
       styles: {
         global: {
           body: {
-            bg: 'gray.100',
+            bg: 'gray.800',
             color: 'gray.700'
           }
         }
