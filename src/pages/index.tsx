@@ -1,3 +1,4 @@
+import React, {useState, useRef} from 'react';
 import { Flex, Heading, Icon, Image, Input, InputGroup, InputRightAddon, Text } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
 import Banner from "../Components/Banner";
@@ -16,58 +17,24 @@ import {AiOutlinePhone} from 'react-icons/ai';
 import Attendance from "../Components/Attendance";
 import {BsWhatsapp} from 'react-icons/bs';
 import Category from "../Components/Category";
+import { EmailSection } from '../Components/EmailOffers';
 
+  export default function Home() {
+    
+    const ref = useRef()
 
-export default function Home() {
   return (
     <>
     <Flex
     flexDir="column"
     alignItems="center"
     >
-<Flex
-    h="11.5rem" w="100%" backgroundColor="gray.300" alignItems="center" flexDir="column"
-  >
-     <Icon as={HiOutlineMail} h="1.5rem" w="1.5rem" mt="0.75rem" />
 
-     <Text
-     fontSize="md"
-      textAlign="center"
-      mt="1.313rem"
+      <EmailSection
+      ref={ref}
       
-     >
-       Cadastre-se e receba as melhores<br/>
-       ofertas no seu email
-     </Text>
-     
+      />
 
-     <InputGroup
-     w="19.125rem"
-     mt="1.438rem"
-     >
-
-       <Input
-
-       type="text"
-       placeholder="E-mail"
-       _placeholder={{color: 'gray.100'}}
-       borderRadius="1.313rem"
-       backgroundColor="gray.800"
-       />
-
-         <InputRightAddon
-         color="gray.300"
-         fontWeight="bold"
-         fontSize="xs"
-         lineHeight="4"
-         fontWeight="bold"
-         children='Enviar'
-         borderRadius="1.313rem"
-         backgroundColor="gray.600"
-         />
-
-     </InputGroup>
-     </Flex>
      <Image
      my="2.313rem"
     h="2.75rem"
@@ -92,20 +59,23 @@ export default function Home() {
   
 
 <Category
-
+text="Institucional"
 />
 
 <Category
-
+text="Ajuda"
 />
 
 <Category
-
+text="Para Você"
 />
+
+<Category
+text="Para Profissionais"
+/>
+
 
   <Flex
-  
-  mt="17px"
   h="23.438rem"
   w="100%"
   backgroundColor="gray.300"
@@ -124,12 +94,25 @@ alignItems="center"
     lineHeight="6"
     fontWeight="bold"
     >Central de Atendimento</Text>
+     
+     <Flex
+     
+     alignItems='center'
+     >
+    <Text
+     fontSize="sm"
+     lineHeight="5"
+     fontWeight="bold"
+    >Segunda a sexta
+    </Text>
 
     <Text
       fontSize="sm"
       lineHeight="5"
-      fontWeight="semibold"
-    >Segunda a sexta das 08h30 às 17h00</Text>
+      fontWeight="medium"
+      ml="0.355rem"
+    >das 08h30 às 17h00</Text>
+    </Flex>
 </Flex>
 <Flex
 pl="1.938rem"

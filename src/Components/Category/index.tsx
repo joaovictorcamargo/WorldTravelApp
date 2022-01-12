@@ -1,48 +1,37 @@
-import { AddIcon, MinusIcon } from "@chakra-ui/icons";
+
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Flex, Icon, Text } from "@chakra-ui/react";
 import { AiOutlinePlus } from "react-icons/ai";
-import Separator from "../Separator";
 
+interface CategoryName {
+    text: string
+}
 
-export default function Category() {
+export default function Category({text}: CategoryName) {
     return (
-        <Accordion allowMultiple>
-
-
-  <AccordionItem>
-    {({ isExpanded }) => (
-      <>
-        <h2>
-          <AccordionButton>
-            <Box flex='1' textAlign='left' h="3.438rem" py="15px" >
+        <Accordion allowToggle>
+  <AccordionItem mx="1rem">
+    <h2>
+      <AccordionButton my="0.938rem">
+        <Box flex='1' textAlign='left'  color="gray.300">
             <Text
-          color="gray.300"
-          fontSize="sm"
-          fontWeight="bold"
-          >
-              Institucional
-          </Text>
-            </Box>
-            {isExpanded ? (
-              <MinusIcon fontSize='12px' color="gray.300"/>
-            ) : (
-              <AddIcon fontSize='12px' color="gray.300" />
-            )}
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-            <Text
-            color="gray.300"
+            fontSize="sm"
+            fontWeight="bold"
             >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          {text}
           </Text>
-        </AccordionPanel>
-      </>
-    )}
+        </Box>
+        <AccordionIcon  color="gray.300"/>
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}  color="gray.300">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </AccordionPanel>
   </AccordionItem>
+
+ 
 </Accordion>
     )
 }
