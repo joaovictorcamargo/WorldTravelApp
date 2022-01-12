@@ -89,35 +89,19 @@ export default function Home() {
  
   </Flex>
 
-  <Flex>
-  <Separator/>
-  </Flex>
+  
 
 <Category
-text="Institucional"
+
 />
 
 <Category
-text="Ajuda"
+
 />
 
 <Category
-text="Para Você"
+
 />
-
-  <Flex
-  justifyContent="space-between"
-  alignItems="center"
-  mx="0.75rem"
-  >
-  <Text
-  color="gray.300"
-  fontWeight="bold"
-  fontSize="sm"
-  >Para Profissionais</Text>
-
-<Icon as={AiOutlinePlus} h="0.819rem" w="1.125rem" color="gray.300" mr="0.375rem" />
-  </Flex>
 
   <Flex
   
@@ -153,7 +137,7 @@ flexDir="column"
 >
     <Attendance
     text="0800-591-0127"
-    src="https://p1595626c1dev-store.occa.ocs.oraclecloud.com/file/general/phone.svg"
+    src="/phone.png"
     /> 
 
 <Attendance
@@ -162,7 +146,7 @@ flexDir="column"
     /> 
 
 <Attendance
-src="https://p1595626c1dev-store.occa.ocs.oraclecloud.com/file/general/question.svg"
+src="/question.png"
     text="Central Leo de Apoio ao Cliente"
     /> 
  </Flex>
@@ -187,7 +171,7 @@ justifyContent="center"
 
 <Image
     h="2.313rem"
-    w="9.375rem"
+    w=""
     src='/image_15.png'
     alt='Logo MasterCard'
   />
@@ -201,14 +185,14 @@ justifyContent="center"
 
   <Text
   color="gray.900"
-  fontSize="10px"
-  fontWeight="500"
+  fontSize="0.625rem"
+  
   >Preços e formas de pagamento são exclusivos para vendas via internet</Text>
 
 </Flex>
 
 <Flex
-my="24px"
+my="2.125rem"
 >
 <Separator/>
 </Flex>
@@ -219,9 +203,8 @@ justifyContent="center"
 
   <Text
   color="gray.300"
-  fontSize="14px"
-  fontWeight="500"
-  mb="20px"
+  fontSize="sm"
+  mb="1.025rem"
   >Certificações</Text>
 </Flex>
   <Flex
@@ -232,29 +215,29 @@ justifyContent="center"
 
 
 <Image
-    h="36px"
-    w="71px"
-    src='/redame.png'
-    alt='Código de barras'
-    ml="5"
+    h="2.313rem"
+    w="5.75rem"
+    src='/redamee.png'
+    alt='Redame'
+    mr="0.438rem"
   />
 
   
 <Image
-    h="36px"
-    w="71px"
-    src='/blindado.png'
-    alt='Código de barras'
-    ml="5"
+    h="2.313rem"
+    w="5.75rem"
+    src='/blindadoo.png'
+    alt='Site Blindado'
+    
   />
 
   
 <Image
-    h="36px"
-    w="71px"
-    src='/googlre.png'
-    alt='Código de barras'
-    ml="5"
+    h="2.313rem"
+    w="5.75rem"
+    src='/googlee.png'
+    alt='Verificação do Google'
+    ml="0.438rem"
   />
   </Flex>
 
@@ -267,14 +250,14 @@ justifyContent="center"
 </Flex>
 
 <Flex
-my="24px"
+my="3.219rem"
 >
 <Separator/>
 </Flex>
 
 <Flex
-mb="46px"
-ml="20px"
+mb="2.875rem"
+ml="2.406rem"
 flexDir="column"
 >
 
@@ -287,7 +270,12 @@ flexDir="column"
   color="gray.1000"
   fontSize="14px"
   fontWeight="500"
-  >Rua Bartolomeu Paes, 136 - 0800-591-0127 CEP:</Text>
+  >Rua Bartolomeu Paes, 136 - 0800-591-0127</Text>
+   <Text
+  color="gray.1000"
+  fontSize="14px"
+  fontWeight="500"
+  >CEP: 05092-000 - São Paulo/SP</Text>
     <Text
   color="gray.1000"
   fontSize="14px"
