@@ -1,14 +1,17 @@
-import { useForm } from 'react-hook-form';
+
 import {forwardRef, ForwardRefRenderFunction} from 'react';
 import { Flex, Icon, Input, InputGroup, InputRightAddon, Text } from "@chakra-ui/react";
 import { HiOutlineMail } from "react-icons/hi";
+import { isValidEmail } from '@brazilian-utils/brazilian-utils';
 
 const EmailSend = ({}, ref: any) => {
-  const {register, handleSubmit} = useForm();
+  
 
   function handleSignIn(e) {
     e.preventDefault();
-    console.log(ref.current.value);
+    const valid = isValidEmail(ref.current.value);
+    if(valid){ console.log('Email cadastrado')}
+    else {console.log('Email Inválido')}
   }
 
     return (
@@ -67,15 +70,13 @@ const EmailSend = ({}, ref: any) => {
         _hover={{ bg: '#d4c608'}}
          border="x"
          color="gray.300"
-         fontWeight="bold"
          fontSize="xs"
          lineHeight="4"
          fontWeight="bold"
-         children='Enviar'
          borderRadius="1.313rem"
          backgroundColor="gray.600"
          
-         />
+         >Entrar</InputRightAddon>
 
 
      </InputGroup>
@@ -84,3 +85,12 @@ const EmailSend = ({}, ref: any) => {
 }
 
 export const EmailSection = forwardRef(EmailSend);
+
+function Email(Email: any, cadastrado: any) {
+  throw new Error('Function not implemented.');
+}
+
+
+function cadastrado(Email: any, cadastrado: any) {
+  throw new Error('Function not implemented.');
+}

@@ -94,6 +94,11 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
+"@brazilian-utils/brazilian-utils@^1.0.0-rc.12":
+  version "1.0.0-rc.12"
+  resolved "https://registry.yarnpkg.com/@brazilian-utils/brazilian-utils/-/brazilian-utils-1.0.0-rc.12.tgz#1ab9dd02bc7cf9cd999a651eb315a0326b6f490b"
+  integrity sha512-gR5TbSKTgFgDe0/ZghgwqCEryLbHjwdEpvr3ao/Z0f8zRu6LD3lif0HJ3eQiC3pJSwtUPyA+97vm1IEqZkYSTA==
+
 "@chakra-ui/accordion@1.4.3":
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/@chakra-ui/accordion/-/accordion-1.4.3.tgz#86837416c674719d6df134110424a93ac71d9eea"
@@ -1635,6 +1640,11 @@ caniuse-lite@^1.0.30001202, caniuse-lite@^1.0.30001219, caniuse-lite@^1.0.300012
   version "1.0.30001298"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001298.tgz#0e690039f62e91c3ea581673d716890512e7ec52"
   integrity sha512-AcKqikjMLlvghZL/vfTHorlQsLDhGRalYf1+GmWCf5SCMziSGjRYQW/JEksj14NaYHIR6KIhrFAy0HV5C25UzQ==
+
+chakra-ui-bottom-navigation@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/chakra-ui-bottom-navigation/-/chakra-ui-bottom-navigation-1.1.3.tgz#f6e8629d6804c37689f78dbbed4cfe514eff88bf"
+  integrity sha512-nzx457cykIe1gmYzxmfkkASbyMwd4MgnHfdqEJZ75Viu5Z7Hu5EcTsoUTyBBqv/0rP94Rxba0bLChUa9l5FdsA==
 
 chalk@2.4.2, chalk@^2.0.0:
   version "2.4.2"
